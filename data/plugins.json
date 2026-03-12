@@ -1,0 +1,1224 @@
+[
+  {
+    "name": "apollo",
+    "author": "Apollo.io",
+    "repo": "knowledge-work-plugins",
+    "category": "partner-built/apollo",
+    "desc": "3 pre-built skills that chain multiple Apollo APIs into complete sales workflows — no manual steps, no tab switching. Enrich any contact from a name, email, or LinkedIn URL. Prospect by describing your ICP in plain English and get ranked leads. Find, enrich, and load contacts into a sequence in one shot.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/partner-built/apollo",
+    "skills": [
+      {
+        "name": "enrich-lead",
+        "desc": "Instant lead enrichment. Drop a name, company, LinkedIn URL, or email and get the full contact card with email, phone, title, company intel, and next actions."
+      },
+      {
+        "name": "prospect",
+        "desc": "Full ICP-to-leads pipeline. Describe your ideal customer in plain English and get a ranked table of enriched decision-maker leads with emails and phone numbers."
+      },
+      {
+        "name": "sequence-load",
+        "desc": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "bio-research",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Research",
+    "desc": "Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/bio-research",
+    "skills": [
+      {
+        "name": "instrument-data-to-allotrope",
+        "desc": "Convert laboratory instrument output files (PDF, CSV, Excel, TXT) to Allotrope Simple Model (ASM) JSON format or flattened 2D CSV. Use this skill when scientists need to standardize instrument data for LIMS systems, data lakes, or downstream analysis. Supports auto-detection of instrument types. Outputs include full ASM JSON, flattened CSV for easy import, and exportable Python code for data engineers. Common triggers include converting instrument files, standardizing lab data, preparing data for upload to LIMS/ELN systems, or generating parser code for production pipelines."
+      },
+      {
+        "name": "nextflow-development",
+        "desc": "Run nf-core bioinformatics pipelines (rnaseq, sarek, atacseq) on sequencing data. Use when analyzing RNA-seq, WGS/WES, or ATAC-seq data—either local FASTQs or public datasets from GEO/SRA. Triggers on nf-core, Nextflow, FASTQ analysis, variant calling, gene expression, differential expression, GEO reanalysis, GSE/GSM/SRR accessions, or samplesheet creation."
+      },
+      {
+        "name": "scientific-problem-selection",
+        "desc": "This skill should be used when scientists need help with research problem selection, project ideation, troubleshooting stuck projects, or strategic scientific decisions. Use this skill when users ask to pitch a new research idea, work through a project problem, evaluate project risks, plan research strategy, navigate decision trees, or get help choosing what scientific problem to work on. Typical requests include \"I have an idea for a project\", \"I'm stuck on my research\", \"help me evaluate this project\", \"what should I work on\", or \"I need strategic advice about my research\"."
+      },
+      {
+        "name": "scvi-tools",
+        "desc": "Deep learning for single-cell analysis using scvi-tools. This skill should be used when users need (1) data integration and batch correction with scVI/scANVI, (2) ATAC-seq analysis with PeakVI, (3) CITE-seq multi-modal analysis with totalVI, (4) multiome RNA+ATAC analysis with MultiVI, (5) spatial transcriptomics deconvolution with DestVI, (6) label transfer and reference mapping with scANVI/scArches, (7) RNA velocity with veloVI, or (8) any deep learning-based single-cell method. Triggers include mentions of scVI, scANVI, totalVI, PeakVI, MultiVI, DestVI, veloVI, sysVI, scArches, variational autoencoder, VAE, batch correction, data integration, multi-modal, CITE-seq, multiome, reference mapping, latent space."
+      },
+      {
+        "name": "single-cell-rna-qc",
+        "desc": "Performs quality control on single-cell RNA-seq data (.h5ad or .h5 files) using scverse best practices with MAD-based filtering and comprehensive visualizations. Use when users request QC analysis, filtering low-quality cells, assessing data quality, or following scverse/scanpy best practices for single-cell analysis."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "brand-voice",
+    "author": "Tribe AI",
+    "repo": "knowledge-work-plugins",
+    "category": "partner-built/brand-voice",
+    "desc": "Brand Voice transforms scattered brand materials into enforceable AI guardrails — automatically. It searches across Notion, Google Drive, Confluence, Gong, Slack, and meeting transcripts to distill your strongest brand signals into a single source of truth, then applies them to every piece of AI-generated content. The more your team creates with Claude, the more consistent your brand becomes.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/partner-built/brand-voice",
+    "skills": [
+      {
+        "name": "brand-voice-enforcement",
+        "desc": ">"
+      },
+      {
+        "name": "discover-brand",
+        "desc": ">"
+      },
+      {
+        "name": "guideline-generation",
+        "desc": ">"
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "common-room",
+    "author": "Common Room",
+    "repo": "knowledge-work-plugins",
+    "category": "partner-built/common-room",
+    "desc": "Turn Common Room into your GTM copilot. Research accounts and contacts, prep for calls with attendee profiles and talking points, and draft personalized outreach across email, LinkedIn, and phone. Build targeted prospect lists, generate weekly briefings for every upcoming call, and create strategic account plans — all grounded in real signal data from product usage, engagement and intent signals, so every output reflects what's actually happening in your accounts.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/partner-built/common-room",
+    "skills": [
+      {
+        "name": "account-research",
+        "desc": "Research a company using Common Room data. Triggers on 'research [company]', 'tell me about [domain]', 'pull up signals for [account]', 'what's going on with [company]', or any account-level question."
+      },
+      {
+        "name": "call-prep",
+        "desc": "Prepare for a customer or prospect call using Common Room signals. Triggers on 'prep me for my call with [company]', 'prepare for a meeting with [company]', 'what should I know before talking to [company]', or any call preparation request."
+      },
+      {
+        "name": "compose-outreach",
+        "desc": "Generate personalized outreach messages using Common Room signals. Triggers on 'draft outreach to [person]', 'write an email to [name]', 'compose a message for [contact]', or any outreach drafting request."
+      },
+      {
+        "name": "contact-research",
+        "desc": "Research a specific person using Common Room data. Triggers on 'who is [name]', 'look up [email]', 'research [contact]', 'is [name] a warm lead', or any contact-level question."
+      },
+      {
+        "name": "prospect",
+        "desc": "Build targeted account or contact lists using Common Room's Prospector. Triggers on 'find companies that match [criteria]', 'build a prospect list', 'find contacts at [type of company]', 'show me companies hiring [role]', or any list-building request."
+      },
+      {
+        "name": "weekly-prep-brief",
+        "desc": "Generate a comprehensive weekly briefing for all external calls in the next 7 days. Triggers on 'weekly prep brief', 'prepare my week', 'what calls do I have this week', 'Monday prep', or any weekly planning request."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "cowork-plugin-management",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Meta",
+    "desc": "Create, customize, and manage plugins tailored to your organization's tools and workflows. Configure MCP servers, adjust plugin behavior, and adapt templates to match how your team works.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/cowork-plugin-management",
+    "skills": [
+      {
+        "name": "cowork-plugin-customizer",
+        "desc": ">"
+      },
+      {
+        "name": "create-cowork-plugin",
+        "desc": ">"
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "customer-support",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Support",
+    "desc": "Triage tickets, draft responses, escalate issues, and build your knowledge base. Research customer context and turn resolved issues into self-service content.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/customer-support",
+    "skills": [
+      {
+        "name": "customer-research",
+        "desc": "Research customer questions by searching across documentation, knowledge bases, and connected sources, then synthesize a confidence-scored answer. Use when a customer asks a question you need to investigate, when building background on a customer situation, or when you need account context."
+      },
+      {
+        "name": "escalation",
+        "desc": "Structure and package support escalations for engineering, product, or leadership with full context, reproduction steps, and business impact. Use when an issue needs to go beyond support, when writing an escalation brief, or when assessing whether an issue warrants escalation."
+      },
+      {
+        "name": "knowledge-management",
+        "desc": "Write and maintain knowledge base articles from resolved support issues. Use when a ticket has been resolved and the solution should be documented, when updating existing KB articles, or when creating how-to guides, troubleshooting docs, or FAQ entries."
+      },
+      {
+        "name": "response-drafting",
+        "desc": "Draft professional, empathetic customer-facing responses adapted to the situation, urgency, and channel. Use when responding to customer tickets, escalations, outage notifications, bug reports, feature requests, or any customer-facing communication."
+      },
+      {
+        "name": "ticket-triage",
+        "desc": "Triage incoming support tickets by categorizing issues, assigning priority (P1-P4), and recommending routing. Use when a new ticket or customer issue comes in, when assessing severity, or when deciding which team should handle an issue."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "data",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Data",
+    "desc": "Write SQL, explore datasets, and generate insights faster. Build visualizations and dashboards, and turn raw data into clear stories for stakeholders.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/data",
+    "skills": [
+      {
+        "name": "data-context-extractor",
+        "desc": ">"
+      },
+      {
+        "name": "data-exploration",
+        "desc": "Profile and explore datasets to understand their shape, quality, and patterns before analysis. Use when encountering a new dataset, assessing data quality, discovering column distributions, identifying nulls and outliers, or deciding which dimensions to analyze."
+      },
+      {
+        "name": "data-validation",
+        "desc": "QA an analysis before sharing with stakeholders — methodology checks, accuracy verification, and bias detection. Use when reviewing an analysis for errors, checking for survivorship bias, validating aggregation logic, or preparing documentation for reproducibility."
+      },
+      {
+        "name": "data-visualization",
+        "desc": "Create effective data visualizations with Python (matplotlib, seaborn, plotly). Use when building charts, choosing the right chart type for a dataset, creating publication-quality figures, or applying design principles like accessibility and color theory."
+      },
+      {
+        "name": "interactive-dashboard-builder",
+        "desc": "Build self-contained interactive HTML dashboards with Chart.js, dropdown filters, and professional styling. Use when creating dashboards, building interactive reports, or generating shareable HTML files with charts and filters that work without a server."
+      },
+      {
+        "name": "sql-queries",
+        "desc": "Write correct, performant SQL across all major data warehouse dialects (Snowflake, BigQuery, Databricks, PostgreSQL, etc.). Use when writing queries, optimizing slow SQL, translating between dialects, or building complex analytical queries with CTEs, window functions, or aggregations."
+      },
+      {
+        "name": "statistical-analysis",
+        "desc": "Apply statistical methods including descriptive stats, trend analysis, outlier detection, and hypothesis testing. Use when analyzing distributions, testing for significance, detecting anomalies, computing correlations, or interpreting statistical results."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "design",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Design",
+    "desc": "Accelerate design workflows — critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/design",
+    "skills": [
+      {
+        "name": "accessibility-review",
+        "desc": "Audit designs and code for WCAG 2.1 AA compliance. Trigger with \"is this accessible\", \"accessibility check\", \"WCAG audit\", \"can screen readers use this\", \"color contrast\", or when the user asks about making designs or code accessible to all users."
+      },
+      {
+        "name": "design-critique",
+        "desc": "Evaluate designs for usability, visual hierarchy, consistency, and adherence to design principles. Trigger with \"what do you think of this design\", \"give me feedback on\", \"critique this\", \"review this mockup\", or when the user shares a design and asks for opinions."
+      },
+      {
+        "name": "design-handoff",
+        "desc": "Create comprehensive developer handoff documentation from designs. Trigger with \"handoff to engineering\", \"developer specs\", \"implementation notes\", \"design specs for developers\", or when a design needs to be translated into detailed implementation guidance."
+      },
+      {
+        "name": "design-system-management",
+        "desc": "Manage design tokens, component libraries, and pattern documentation. Trigger with \"design system\", \"component library\", \"design tokens\", \"style guide\", or when the user asks about maintaining consistency across designs."
+      },
+      {
+        "name": "user-research",
+        "desc": "Plan, conduct, and synthesize user research. Trigger with \"user research plan\", \"interview guide\", \"usability test\", \"survey design\", \"research questions\", or when the user needs help with any aspect of understanding their users through research."
+      },
+      {
+        "name": "ux-writing",
+        "desc": "Write effective microcopy for user interfaces. Trigger with \"write copy for\", \"help with UX copy\", \"what should this button say\", \"error message for\", \"empty state copy\", or when the user needs help with any interface text."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "engineering",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Engineering",
+    "desc": "Streamline engineering workflows — standups, code review, architecture decisions, incident response, and technical documentation. Works with your existing tools or standalone.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/engineering",
+    "skills": [
+      {
+        "name": "code-review",
+        "desc": "Review code for bugs, security vulnerabilities, performance issues, and maintainability. Trigger with \"review this code\", \"check this PR\", \"look at this diff\", \"is this code safe?\", or when the user shares code and asks for feedback."
+      },
+      {
+        "name": "documentation",
+        "desc": "Write and maintain technical documentation. Trigger with \"write docs for\", \"document this\", \"create a README\", \"write a runbook\", \"onboarding guide\", or when the user needs help with any form of technical writing — API docs, architecture docs, or operational runbooks."
+      },
+      {
+        "name": "incident-response",
+        "desc": "Triage and manage production incidents. Trigger with \"we have an incident\", \"production is down\", \"something is broken\", \"there's an outage\", \"SEV1\", or when the user describes a production issue needing immediate response."
+      },
+      {
+        "name": "system-design",
+        "desc": "Design systems, services, and architectures. Trigger with \"design a system for\", \"how should we architect\", \"system design for\", \"what's the right architecture for\", or when the user needs help with API design, data modeling, or service boundaries."
+      },
+      {
+        "name": "tech-debt",
+        "desc": "Identify, categorize, and prioritize technical debt. Trigger with \"tech debt\", \"technical debt audit\", \"what should we refactor\", \"code health\", or when the user asks about code quality, refactoring priorities, or maintenance backlog."
+      },
+      {
+        "name": "testing-strategy",
+        "desc": "Design test strategies and test plans. Trigger with \"how should we test\", \"test strategy for\", \"write tests for\", \"test plan\", \"what tests do we need\", or when the user needs help with testing approaches, coverage, or test architecture."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "enterprise-search",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Search",
+    "desc": "Search across all of your company's tools in one place. Find anything across email, chat, documents, and wikis without switching between apps.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/enterprise-search",
+    "skills": [
+      {
+        "name": "knowledge-synthesis",
+        "desc": "Combines search results from multiple sources into coherent, deduplicated answers with source attribution. Handles confidence scoring based on freshness and authority, and summarizes large result sets effectively."
+      },
+      {
+        "name": "search-strategy",
+        "desc": "Query decomposition and multi-source search orchestration. Breaks natural language questions into targeted searches per source, translates queries into source-specific syntax, ranks results by relevance, and handles ambiguity and fallback strategies."
+      },
+      {
+        "name": "source-management",
+        "desc": "Manages connected MCP sources for enterprise search. Detects available sources, guides users to connect new ones, handles source priority ordering, and manages rate limiting awareness."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "finance",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Finance",
+    "desc": "Streamline finance and accounting workflows, from journal entries and reconciliation to financial statements and variance analysis. Speed up audit prep, month-end close, and keeping your books clean.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/finance",
+    "skills": [
+      {
+        "name": "audit-support",
+        "desc": "Support SOX 404 compliance with control testing methodology, sample selection, and documentation standards. Use when generating testing workpapers, selecting audit samples, classifying control deficiencies, or preparing for internal or external audits."
+      },
+      {
+        "name": "close-management",
+        "desc": "Manage the month-end close process with task sequencing, dependencies, and status tracking. Use when planning the close calendar, tracking close progress, identifying blockers, or sequencing close activities by day."
+      },
+      {
+        "name": "financial-statements",
+        "desc": "Generate income statements, balance sheets, and cash flow statements with GAAP presentation and period-over-period comparison. Use when preparing financial statements, running flux analysis, or creating P&L reports with variance commentary."
+      },
+      {
+        "name": "journal-entry-prep",
+        "desc": "Prepare journal entries with proper debits, credits, and supporting documentation for month-end close. Use when booking accruals, prepaid amortization, fixed asset depreciation, payroll entries, revenue recognition, or any manual journal entry."
+      },
+      {
+        "name": "reconciliation",
+        "desc": "Reconcile accounts by comparing GL balances to subledgers, bank statements, or third-party data. Use when performing bank reconciliations, GL-to-subledger recs, intercompany reconciliations, or identifying and categorizing reconciling items."
+      },
+      {
+        "name": "variance-analysis",
+        "desc": "Decompose financial variances into drivers with narrative explanations and waterfall analysis. Use when analyzing budget vs. actual, period-over-period changes, revenue or expense variances, or preparing variance commentary for leadership."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "human-resources",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "HR",
+    "desc": "Streamline people operations — recruiting, onboarding, performance reviews, compensation analysis, and policy guidance. Maintain compliance and keep your team running smoothly.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/human-resources",
+    "skills": [
+      {
+        "name": "compensation-benchmarking",
+        "desc": "Benchmark compensation against market data. Trigger with \"what should we pay\", \"comp benchmark\", \"market rate for\", \"salary range for\", \"is this offer competitive\", or when the user needs help evaluating or setting compensation levels."
+      },
+      {
+        "name": "employee-handbook",
+        "desc": "Answer questions about company policies, benefits, and procedures. Trigger with \"what's our policy on\", \"how does PTO work\", \"benefits question\", \"expense policy\", \"remote work policy\", or any question about company rules, perks, or procedures."
+      },
+      {
+        "name": "interview-prep",
+        "desc": "Create structured interview plans with competency-based questions and scorecards. Trigger with \"interview plan for\", \"interview questions for\", \"how should we interview\", \"scorecard for\", or when the user is preparing to interview candidates."
+      },
+      {
+        "name": "org-planning",
+        "desc": "Headcount planning, org design, and team structure optimization. Trigger with \"org planning\", \"headcount plan\", \"team structure\", \"reorg\", \"who should we hire next\", or when the user is thinking about team size, reporting structure, or organizational design."
+      },
+      {
+        "name": "people-analytics",
+        "desc": "Analyze workforce data — attrition, engagement, diversity, and productivity. Trigger with \"attrition rate\", \"turnover analysis\", \"diversity metrics\", \"engagement data\", \"retention risk\", or when the user wants to understand workforce trends from HR data."
+      },
+      {
+        "name": "recruiting-pipeline",
+        "desc": "Track and manage recruiting pipeline stages. Trigger with \"recruiting update\", \"candidate pipeline\", \"how many candidates\", \"hiring status\", or when the user discusses sourcing, screening, interviewing, or extending offers."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "legal",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Legal",
+    "desc": "Speed up contract review, NDA triage, and compliance workflows for in-house legal teams. Draft legal briefs, organize precedent research, and manage institutional knowledge.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/legal",
+    "skills": [
+      {
+        "name": "canned-responses",
+        "desc": "Generate templated responses for common legal inquiries and identify when situations require individualized attention. Use when responding to routine legal questions — data subject requests, vendor inquiries, NDA requests, discovery holds — or when managing response templates."
+      },
+      {
+        "name": "compliance",
+        "desc": "Navigate privacy regulations (GDPR, CCPA), review DPAs, and handle data subject requests. Use when reviewing data processing agreements, responding to data subject access or deletion requests, assessing cross-border data transfer requirements, or evaluating privacy compliance."
+      },
+      {
+        "name": "contract-review",
+        "desc": "Review contracts against your organization's negotiation playbook, flagging deviations and generating redline suggestions. Use when reviewing vendor contracts, customer agreements, or any commercial agreement where you need clause-by-clause analysis against standard positions."
+      },
+      {
+        "name": "legal-risk-assessment",
+        "desc": "Assess and classify legal risks using a severity-by-likelihood framework with escalation criteria. Use when evaluating contract risk, assessing deal exposure, classifying issues by severity, or determining whether a matter needs senior counsel or outside legal review."
+      },
+      {
+        "name": "meeting-briefing",
+        "desc": "Prepare structured briefings for meetings with legal relevance and track resulting action items. Use when preparing for contract negotiations, board meetings, compliance reviews, or any meeting where legal context, background research, or action tracking is needed."
+      },
+      {
+        "name": "nda-triage",
+        "desc": "Screen incoming NDAs and classify them as GREEN (standard), YELLOW (needs review), or RED (significant issues). Use when a new NDA comes in from sales or business development, when assessing NDA risk level, or when deciding whether an NDA needs full counsel review."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "marketing",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Marketing",
+    "desc": "Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/marketing",
+    "skills": [
+      {
+        "name": "brand-voice",
+        "desc": "Apply and enforce brand voice, style guide, and messaging pillars across content. Use when reviewing content for brand consistency, documenting a brand voice, adapting tone for different audiences, or checking terminology and style guide compliance."
+      },
+      {
+        "name": "campaign-planning",
+        "desc": "Plan marketing campaigns with objectives, audience segmentation, channel strategy, content calendars, and success metrics. Use when launching a campaign, planning a product launch, building a content calendar, allocating budget across channels, or defining campaign KPIs."
+      },
+      {
+        "name": "competitive-analysis",
+        "desc": "Research competitors and compare positioning, messaging, content strategy, and market presence. Use when analyzing a competitor, building battlecards, identifying content gaps, comparing feature messaging, or preparing competitive positioning recommendations."
+      },
+      {
+        "name": "content-creation",
+        "desc": "Draft marketing content across channels — blog posts, social media, email newsletters, landing pages, press releases, and case studies. Use when writing any marketing content, when you need channel-specific formatting, SEO-optimized copy, headline options, or calls to action."
+      },
+      {
+        "name": "performance-analytics",
+        "desc": "Analyze marketing performance with key metrics, trend analysis, and optimization recommendations. Use when building performance reports, reviewing campaign results, analyzing channel metrics (email, social, paid, SEO), or identifying what's working and what needs improvement."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "operations",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Operations",
+    "desc": "Optimize business operations — vendor management, process documentation, change management, capacity planning, and compliance tracking. Keep your organization running efficiently.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/operations",
+    "skills": [
+      {
+        "name": "change-management",
+        "desc": "Plan and execute organizational or technical changes. Trigger with \"we're changing\", \"rolling out\", \"migration plan\", \"how do we communicate this change\", \"change management plan\", or when the user is planning a change that affects people, processes, or systems."
+      },
+      {
+        "name": "compliance-tracking",
+        "desc": "Track compliance requirements and audit readiness. Trigger with \"compliance\", \"audit prep\", \"SOC 2\", \"ISO 27001\", \"GDPR\", \"regulatory requirement\", or when the user needs help tracking, preparing for, or documenting compliance activities."
+      },
+      {
+        "name": "process-optimization",
+        "desc": "Analyze and improve business processes. Trigger with \"this process is slow\", \"how can we improve\", \"streamline this workflow\", \"too many steps\", \"bottleneck\", or when the user describes an inefficient process they want to fix."
+      },
+      {
+        "name": "resource-planning",
+        "desc": "Plan and optimize resource allocation. Trigger with \"resource planning\", \"capacity\", \"utilization\", \"staffing plan\", \"who should work on what\", \"we're stretched thin\", or when the user needs help allocating people, budget, or time across projects and teams."
+      },
+      {
+        "name": "risk-assessment",
+        "desc": "Identify, assess, and mitigate operational risks. Trigger with \"what are the risks\", \"risk assessment\", \"risk register\", \"what could go wrong\", or when the user is evaluating risks associated with a project, vendor, process, or decision."
+      },
+      {
+        "name": "vendor-management",
+        "desc": "Evaluate, compare, and manage vendor relationships. Trigger with \"evaluate this vendor\", \"compare vendors\", \"vendor review\", \"should we renew\", \"RFP\", or when the user is making procurement or vendor decisions."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "product-management",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Product",
+    "desc": "Write feature specs, plan roadmaps, and synthesize user research faster. Keep stakeholders updated and stay ahead of the competitive landscape.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/product-management",
+    "skills": [
+      {
+        "name": "competitive-analysis",
+        "desc": "Analyze competitors with feature comparison matrices, positioning analysis, and strategic implications. Use when researching a competitor, comparing product capabilities, assessing competitive positioning, or preparing a competitive brief for product strategy."
+      },
+      {
+        "name": "feature-spec",
+        "desc": "Write structured product requirements documents (PRDs) with problem statements, user stories, requirements, and success metrics. Use when speccing a new feature, writing a PRD, defining acceptance criteria, prioritizing requirements, or documenting product decisions."
+      },
+      {
+        "name": "metrics-tracking",
+        "desc": "Define, track, and analyze product metrics with frameworks for goal setting and dashboard design. Use when setting up OKRs, building metrics dashboards, running weekly metrics reviews, identifying trends, or choosing the right metrics for a product area."
+      },
+      {
+        "name": "roadmap-management",
+        "desc": "Plan and prioritize product roadmaps using frameworks like RICE, MoSCoW, and ICE. Use when creating a roadmap, reprioritizing features, mapping dependencies, choosing between Now/Next/Later or quarterly formats, or presenting roadmap tradeoffs to stakeholders."
+      },
+      {
+        "name": "stakeholder-comms",
+        "desc": "Draft stakeholder updates tailored to audience — executives, engineering, customers, or cross-functional partners. Use when writing weekly status updates, monthly reports, launch announcements, risk communications, or decision documentation."
+      },
+      {
+        "name": "user-research-synthesis",
+        "desc": "Synthesize qualitative and quantitative user research into structured insights and opportunity areas. Use when analyzing interview notes, survey responses, support tickets, or behavioral data to identify themes, build personas, or prioritize opportunities."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "productivity",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Productivity",
+    "desc": "Manage tasks, plan your day, and build up memory of important context about your work. Syncs with your calendar, email, and chat to keep everything organized and on track.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/productivity",
+    "skills": [
+      {
+        "name": "memory-management",
+        "desc": "Two-tier memory system that makes Claude a true workplace collaborator. Decodes shorthand, acronyms, nicknames, and internal language so Claude understands requests like a colleague would. CLAUDE.md for working memory, memory/ directory for the full knowledge base."
+      },
+      {
+        "name": "task-management",
+        "desc": "Simple task management using a shared TASKS.md file. Reference this when the user asks about their tasks, wants to add/complete tasks, or needs help tracking commitments."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "sales",
+    "author": "Anthropic",
+    "repo": "knowledge-work-plugins",
+    "category": "Sales",
+    "desc": "Prospect, craft outreach, and build deal strategy faster. Prep for calls, manage your pipeline, and write personalized messaging that moves deals forward.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/sales",
+    "skills": [
+      {
+        "name": "account-research",
+        "desc": "Research a company or person and get actionable sales intel. Works standalone with web search, supercharged when you connect enrichment tools or your CRM. Trigger with \"research [company]\", \"look up [person]\", \"intel on [prospect]\", \"who is [name] at [company]\", or \"tell me about [company]\"."
+      },
+      {
+        "name": "call-prep",
+        "desc": "Prepare for a sales call with account context, attendee research, and suggested agenda. Works standalone with user input and web research, supercharged when you connect your CRM, email, chat, or transcripts. Trigger with \"prep me for my call with [company]\", \"I'm meeting with [company] prep me\", \"call prep [company]\", or \"get me ready for [meeting]\"."
+      },
+      {
+        "name": "competitive-intelligence",
+        "desc": "Research your competitors and build an interactive battlecard. Outputs an HTML artifact with clickable competitor cards and a comparison matrix. Trigger with \"competitive intel\", \"research competitors\", \"how do we compare to [competitor]\", \"battlecard for [competitor]\", or \"what's new with [competitor]\"."
+      },
+      {
+        "name": "create-an-asset",
+        "desc": "Generate tailored sales assets (landing pages, decks, one-pagers, workflow demos) from your deal context. Describe your prospect, audience, and goal — get a polished, branded asset ready to share with customers."
+      },
+      {
+        "name": "daily-briefing",
+        "desc": "Start your day with a prioritized sales briefing. Works standalone when you tell me your meetings and priorities, supercharged when you connect your calendar, CRM, and email. Trigger with \"morning briefing\", \"daily brief\", \"what's on my plate today\", \"prep my day\", or \"start my day\"."
+      },
+      {
+        "name": "draft-outreach",
+        "desc": "Research a prospect then draft personalized outreach. Uses web research by default, supercharged with enrichment and CRM. Trigger with \"draft outreach to [person/company]\", \"write cold email to [prospect]\", \"reach out to [name]\"."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "slack-by-salesforce",
+    "author": "Salesforce",
+    "repo": "knowledge-work-plugins",
+    "category": "partner-built/slack",
+    "desc": "Official Slack MCP server for interactive and collaborative workflows. Surface insights, draft messages, and engage teams directly within Slack from Claude Cowork.",
+    "source": "anthropics/knowledge-work-plugins",
+    "installCmd": "claude plugin add anthropics/knowledge-work-plugins/partner-built/slack",
+    "skills": [
+      {
+        "name": "slack-messaging",
+        "desc": "Guidance for composing well-formatted, effective Slack messages using mrkdwn syntax"
+      },
+      {
+        "name": "slack-search",
+        "desc": "Guidance for effectively searching Slack to find messages, files, channels, and people"
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "equity-research",
+    "author": "Anthropic FSI",
+    "repo": "financial-services-plugins",
+    "category": "equity-research",
+    "desc": "Equity research tools: earnings analysis, initiating coverage reports, and research workflows",
+    "source": "anthropics/financial-services-plugins",
+    "installCmd": "claude plugin add anthropics/financial-services-plugins/equity-research",
+    "skills": [
+      {
+        "name": "catalyst-calendar",
+        "desc": "Build and maintain a calendar of upcoming catalysts across a coverage universe — earnings dates, conferences, product launches, regulatory decisions, and macro events. Helps prioritize attention and position ahead of events. Triggers on \"catalyst calendar\", \"upcoming events\", \"what's coming up\", \"earnings calendar\", \"event calendar\", or \"catalyst tracker\"."
+      },
+      {
+        "name": "earnings-analysis",
+        "desc": "Create professional equity research earnings update reports (8-12 pages, 3,000-5,000 words) analyzing quarterly results for companies already under coverage. Fast-turnaround format focusing on beat/miss analysis, key metrics, updated estimates, and revised thesis. Includes 1-3 summary tables and 8-12 charts. Use when user requests \"earnings update\", \"quarterly update\", \"earnings analysis\", \"Q1/Q2/Q3/Q4 results\", or post-earnings report."
+      },
+      {
+        "name": "earnings-preview",
+        "desc": "Build pre-earnings analysis with estimate models, scenario frameworks, and key metrics to watch. Use before a company reports quarterly earnings to prepare positioning notes, set up bull/bear scenarios, and identify what will move the stock. Triggers on \"earnings preview\", \"what to watch for [company] earnings\", \"pre-earnings\", \"earnings setup\", or \"preview Q[X] for [company]\"."
+      },
+      {
+        "name": "idea-generation",
+        "desc": "Systematic stock screening and investment idea sourcing. Combines quantitative screens, thematic research, and pattern recognition to surface new long and short ideas. Use when looking for new ideas, running screens, or conducting thematic sweeps. Triggers on \"idea generation\", \"stock screen\", \"find ideas\", \"what looks interesting\", \"screen for\", \"new ideas\", or \"pitch me something\"."
+      },
+      {
+        "name": "initiating-coverage",
+        "desc": "Create institutional-quality equity research initiation reports through a 5-task workflow. Tasks must be executed individually with verified prerequisites - (1) company research, (2) financial modeling, (3) valuation analysis, (4) chart generation, (5) final report assembly. Each task produces specific deliverables (markdown docs, Excel models, charts, or DOCX reports). Tasks 3-5 have dependencies on earlier tasks."
+      },
+      {
+        "name": "model-update",
+        "desc": "Update financial models with new data — quarterly earnings, management guidance, macro changes, or revised assumptions. Adjusts estimates, recalculates valuation, and flags material changes. Use after earnings, guidance updates, or when assumptions need refreshing. Triggers on \"update model\", \"plug earnings\", \"refresh estimates\", \"update numbers for [company]\", \"new guidance\", or \"revise estimates\"."
+      },
+      {
+        "name": "morning-note",
+        "desc": "Draft concise morning meeting notes summarizing overnight developments, trade ideas, and key events for coverage stocks. Designed for the 7am morning meeting format — tight, opinionated, actionable. Triggers on \"morning note\", \"morning meeting\", \"what happened overnight\", \"trade idea\", \"morning call prep\", or \"daily note\"."
+      },
+      {
+        "name": "sector-overview",
+        "desc": "Create comprehensive industry and sector landscape reports covering market dynamics, competitive positioning, key players, and thematic trends. Use for client requests, sector initiations, thematic research pieces, or internal knowledge building. Triggers on \"sector overview\", \"industry report\", \"market landscape\", \"sector analysis\", \"industry deep dive\", or \"thematic research\"."
+      },
+      {
+        "name": "thesis-tracker",
+        "desc": "Maintain and update investment theses for portfolio positions and watchlist names. Track key data points, catalysts, and thesis milestones over time. Use when updating a thesis with new information, reviewing position rationale, or checking if a thesis is still intact. Triggers on \"update thesis for [company]\", \"is my thesis still intact\", \"thesis check\", \"add data point to [company]\", or \"review my positions\"."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "financial-analysis",
+    "author": "Anthropic FSI",
+    "repo": "financial-services-plugins",
+    "category": "financial-analysis",
+    "desc": "Core financial modeling and analysis tools: DCF, comps, LBO, 3-statement models, competitive analysis, and deck QC",
+    "source": "anthropics/financial-services-plugins",
+    "installCmd": "claude plugin add anthropics/financial-services-plugins/financial-analysis",
+    "skills": [
+      {
+        "name": "3-statement-model",
+        "desc": "Complete, populate and fill out 3-statement financial model templates (Income Statement, Balance Sheet, Cash Flow Statement) . Use when asked to fill out model templates, complete existing model frameworks, populate financial models with data, complete a partially filled IS/BS/CF framework, or link integrated financial statements within an existing template structure. Triggers include requests to fill in, complete, or populate a 3-statement model template"
+      },
+      {
+        "name": "audit-xls",
+        "desc": "Audit a spreadsheet for formula accuracy, errors, and common mistakes. Scopes to a selected range, a single sheet, or the entire model (including financial-model integrity checks like BS balance, cash tie-out, and logic sanity). Triggers on \"audit this sheet\", \"check my formulas\", \"find formula errors\", \"QA this spreadsheet\", \"sanity check this\", \"debug model\", \"model check\", \"model won't balance\", \"something's off in my model\", \"model review\"."
+      },
+      {
+        "name": "clean-data-xls",
+        "desc": "Clean up messy spreadsheet data — trim whitespace, fix inconsistent casing, convert numbers-stored-as-text, standardize dates, remove duplicates, and flag mixed-type columns. Use when data is messy, inconsistent, or needs prep before analysis. Triggers on \"clean this data\", \"clean up this sheet\", \"normalize this data\", \"fix formatting\", \"dedupe\", \"standardize this column\", \"this data is messy\"."
+      },
+      {
+        "name": "competitive-analysis",
+        "desc": "Framework for building competitive landscape decks — market positioning, competitor deep-dives, comparative analysis, strategic synthesis. Use when the user asks for a competitive landscape, competitor analysis, peer comparison, market positioning assessment, strategic review, or investment memo deck. Also triggers on \"who are the competitors to X\", \"benchmark X against peers\", \"build a market map\", or any request to systematically evaluate competitive dynamics across an industry."
+      },
+      {
+        "name": "comps-analysis",
+        "desc": "|"
+      },
+      {
+        "name": "dcf-model",
+        "desc": "Real DCF (Discounted Cash Flow) model creation for equity valuation. Retrieves financial data from SEC filings and analyst reports, builds comprehensive cash flow projections with proper WACC calculations, performs sensitivity analysis, and outputs professional Excel models with executive summaries. Use when users need to value a company using DCF methodology, request intrinsic value analysis, or ask for detailed financial modeling with growth projections and terminal value calculations."
+      },
+      {
+        "name": "deck-refresh",
+        "desc": "Updates a presentation with new numbers — quarterly refreshes, earnings updates, comp rolls, rebased market data. Use whenever the user asks to \"update the deck with Q4 numbers\", \"refresh the comps\", \"roll this forward\", \"swap in the new earnings\", \"change all the $485M to $512M\", or any request to swap figures across an existing deck without rebuilding it."
+      },
+      {
+        "name": "ib-check-deck",
+        "desc": "Investment banking presentation quality checker. Reviews a pitch deck or client-ready presentation for (1) number consistency across slides, (2) data-narrative alignment, (3) language polish against IB standards, (4) visual and formatting QC. Use whenever the user asks to review, check, QC, proof, or do a final pass on a deck, pitch, or client materials — including requests like \"check my numbers\", \"reconcile figures across slides\", \"is this client-ready\", or \"what am I missing before I send this out\"."
+      },
+      {
+        "name": "lbo-model",
+        "desc": "This skill should be used when completing LBO (Leveraged Buyout) model templates in Excel for private equity transactions, deal materials, or investment committee presentations. The skill fills in formulas, validates calculations, and ensures professional formatting standards that adapt to any template structure."
+      },
+      {
+        "name": "ppt-template-creator",
+        "desc": "Creates self-contained PPT template SKILLS (not presentations) from user-provided PowerPoint templates. Use ONLY when a user wants to create a reusable skill from their template. For creating actual presentations, use the pptx skill instead."
+      },
+      {
+        "name": "skill-creator",
+        "desc": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "investment-banking",
+    "author": "Anthropic",
+    "repo": "financial-services-plugins",
+    "category": "investment-banking",
+    "desc": "Investment banking productivity tools: client and market insights, deck creation, financial analysis, and transaction management",
+    "source": "anthropics/financial-services-plugins",
+    "installCmd": "claude plugin add anthropics/financial-services-plugins/investment-banking",
+    "skills": [
+      {
+        "name": "buyer-list",
+        "desc": "Build and organize a universe of potential acquirers for sell-side M&A processes. Identifies strategic and financial buyers, assesses fit, and prioritizes outreach. Use when preparing for a sell-side mandate, building a buyer universe, or evaluating potential partners. Triggers on \"buyer list\", \"buyer universe\", \"potential acquirers\", \"who would buy this\", \"strategic buyers\", or \"financial sponsors\"."
+      },
+      {
+        "name": "cim-builder",
+        "desc": "Structure and draft a Confidential Information Memorandum for sell-side M&A processes. Organizes company information into a professional, investor-ready document with consistent formatting and narrative flow. Use when preparing sell-side materials, drafting a CIM, or organizing company data for a sale process. Triggers on \"CIM\", \"confidential information memorandum\", \"offering memorandum\", \"info memo\", \"draft CIM\", or \"sell-side materials\"."
+      },
+      {
+        "name": "datapack-builder",
+        "desc": "Build professional financial services data packs from various sources including CIMs, offering memorandums, SEC filings, web search, or MCP servers. Extract, normalize, and standardize financial data into investment committee-ready Excel workbooks with consistent structure, proper formatting, and documented assumptions. Use for M&A due diligence, private equity analysis, investment committee materials, and standardizing financial reporting across portfolio companies. Do not use for simple financial calculations or working with already-completed data packs."
+      },
+      {
+        "name": "deal-tracker",
+        "desc": "Track multiple live deals with milestones, deadlines, action items, and status updates. Maintains a deal pipeline view and surfaces upcoming deadlines and overdue items. Use when managing a book of business, tracking process milestones, or preparing for weekly deal reviews. Triggers on \"deal tracker\", \"deal status\", \"where are we on\", \"process update\", \"deal pipeline\", or \"weekly deal review\"."
+      },
+      {
+        "name": "merger-model",
+        "desc": "Build accretion/dilution analysis for M&A transactions. Models pro forma EPS impact, synergy sensitivities, and purchase price allocation. Use when evaluating a potential acquisition, preparing merger consequences analysis for a pitch, or advising on deal terms. Triggers on \"merger model\", \"accretion dilution\", \"M&A model\", \"pro forma EPS\", \"merger consequences\", or \"deal impact analysis\"."
+      },
+      {
+        "name": "pitch-deck",
+        "desc": "Populates investment banking pitch deck templates with data from source files. Use when: user provides a PowerPoint template to fill in, user has source data (Excel/CSV) to populate into slides, user mentions populating or filling a pitch deck template, or user needs to transfer data into existing slide layouts. Not for creating presentations from scratch."
+      },
+      {
+        "name": "process-letter",
+        "desc": "Draft process letters and bid instructions for sell-side M&A processes. Covers initial indication of interest (IOI) instructions, final bid procedures, and management meeting logistics. Triggers on \"process letter\", \"bid instructions\", \"IOI letter\", \"bid procedures\", \"final round letter\", or \"management meeting invite\"."
+      },
+      {
+        "name": "strip-profile",
+        "desc": "|"
+      },
+      {
+        "name": "teaser",
+        "desc": "Draft anonymous one-page company teasers for sell-side M&A processes. Creates a compelling summary without revealing the company's identity, designed to gauge buyer interest before NDA execution. Triggers on \"teaser\", \"blind teaser\", \"anonymous profile\", \"one-pager for process\", or \"draft teaser for sell-side\"."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "lseg",
+    "author": "LSEG",
+    "repo": "financial-services-plugins",
+    "category": "partner-built/lseg",
+    "desc": "Price bonds, analyze yield curves, evaluate FX carry trades, value options, and build macro dashboards using LSEG financial data and analytics.",
+    "source": "anthropics/financial-services-plugins",
+    "installCmd": "claude plugin add anthropics/financial-services-plugins/partner-built/lseg",
+    "skills": [
+      {
+        "name": "bond-futures-basis",
+        "desc": "Analyze the bond futures basis by pricing futures, identifying the cheapest-to-deliver, and comparing with yield curves to assess delivery option value and basis trading opportunities. Use when analyzing bond futures, computing the basis, identifying CTD bonds, calculating implied repo rates, or evaluating basis trades."
+      },
+      {
+        "name": "bond-relative-value",
+        "desc": "Perform relative value analysis on bonds by combining pricing, yield curve context, credit spreads, and scenario stress testing. Use when analyzing bond richness/cheapness, computing spread decomposition, comparing bonds, assessing bond value vs curves, or running rate shock scenarios."
+      },
+      {
+        "name": "equity-research",
+        "desc": "Generate comprehensive equity research snapshots combining analyst consensus estimates, company fundamentals, historical prices, and macroeconomic context. Use when researching stocks, comparing estimates to actuals, analyzing company financials, assessing equity valuations, or building investment cases."
+      },
+      {
+        "name": "fixed-income-portfolio",
+        "desc": "Review fixed income portfolios by pricing multiple bonds, retrieving reference data, analyzing cashflows, and running scenario analysis. Use when reviewing bond portfolios, computing portfolio duration and DV01, analyzing cashflow waterfalls, stress testing rate scenarios, or assessing portfolio composition."
+      },
+      {
+        "name": "fx-carry-trade",
+        "desc": "Evaluate FX carry trade opportunities by combining spot rates, forward points, interest rate differentials, volatility surface analysis, and historical price trends. Use when analyzing carry trades, comparing FX forward curves, assessing carry-to-vol ratios, or evaluating currency pair opportunities."
+      },
+      {
+        "name": "macro-rates-monitor",
+        "desc": "Build macroeconomic and rates dashboards combining macro indicators, yield curves, inflation breakevens, and swap rates. Use when monitoring macro conditions, analyzing yield curve shape, decomposing real vs nominal rates, assessing policy rate expectations, or evaluating financial conditions."
+      },
+      {
+        "name": "option-vol-analysis",
+        "desc": "Analyze option volatility by combining vol surface data, option pricing with Greeks, and historical price data to assess implied vs realized volatility. Use when pricing options, analyzing volatility surfaces, computing Greeks, assessing vol premiums, or evaluating vol trading strategies."
+      },
+      {
+        "name": "swap-curve-strategy",
+        "desc": "Analyze the interest rate swap curve by pricing swaps at multiple tenors, overlaying government and inflation curves, and identifying curve trade opportunities. Use when analyzing swap curves, computing swap spreads, decomposing real rates, identifying steepener/flattener/butterfly trades, or comparing swap rates across currencies."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "private-equity",
+    "author": "Anthropic FSI",
+    "repo": "financial-services-plugins",
+    "category": "private-equity",
+    "desc": "Private equity deal sourcing and workflow tools: company discovery, CRM integration, and founder outreach",
+    "source": "anthropics/financial-services-plugins",
+    "installCmd": "claude plugin add anthropics/financial-services-plugins/private-equity",
+    "skills": [
+      {
+        "name": "dd-checklist",
+        "desc": "Generate and track comprehensive due diligence checklists tailored to the target company's sector, deal type, and complexity. Covers all major workstreams with request lists, status tracking, and red flag escalation. Use when kicking off diligence, organizing a data room review, or tracking outstanding items. Triggers on \"dd checklist\", \"due diligence tracker\", \"diligence request list\", \"what do we still need\", or \"data room review\"."
+      },
+      {
+        "name": "dd-meeting-prep",
+        "desc": "Prepare for due diligence meetings — management presentations, expert network calls, customer references, and advisor sessions. Generates targeted question lists, benchmarks to reference, and red flags to probe. Use before any diligence meeting or call. Triggers on \"prep for management meeting\", \"diligence call prep\", \"expert call questions\", \"customer reference questions\", or \"meeting prep for [company]\"."
+      },
+      {
+        "name": "deal-screening",
+        "desc": "Quickly screen inbound deal flow — CIMs, teasers, and broker materials — against the fund's investment criteria. Extracts key deal metrics, runs a pass/fail framework, and outputs a one-page screening memo. Use when reviewing new deal flow, triaging inbound materials, or deciding whether to take a first call. Triggers on \"screen this deal\", \"review this CIM\", \"should we look at this\", \"triage this teaser\", or \"deal screening\"."
+      },
+      {
+        "name": "deal-sourcing",
+        "desc": "PE deal sourcing workflow — discover target companies, check CRM for existing relationships, and draft personalized founder outreach emails. Use when sourcing new deals, prospecting companies in a sector, or reaching out to founders. Triggers on \"find companies\", \"source deals\", \"draft founder email\", \"check if we've seen this company\", or \"outreach to founder\"."
+      },
+      {
+        "name": "ic-memo",
+        "desc": "Draft a structured investment committee memo for PE deal approval. Synthesizes due diligence findings, financial analysis, and deal terms into a professional IC-ready document. Use when preparing for investment committee, writing up a deal, or creating a formal recommendation. Triggers on \"write IC memo\", \"investment committee memo\", \"deal write-up\", \"prepare IC materials\", or \"recommendation memo\"."
+      },
+      {
+        "name": "portfolio-monitoring",
+        "desc": "Track and analyze portfolio company performance against plan. Ingests monthly/quarterly financial packages (Excel, PDF), extracts KPIs, flags variances to budget, and produces summary dashboards. Use when reviewing portfolio company financials, preparing board materials, or monitoring covenant compliance. Triggers on \"review portfolio company\", \"monthly financials\", \"how is [company] performing\", \"covenant check\", or \"portfolio update\"."
+      },
+      {
+        "name": "returns-analysis",
+        "desc": "Build quick IRR/MOIC sensitivity tables for PE deal evaluation. Models returns across entry multiple, leverage, exit multiple, growth, and hold period scenarios. Use when sizing up a deal, stress-testing assumptions, or preparing IC returns exhibits. Triggers on \"returns analysis\", \"IRR sensitivity\", \"MOIC table\", \"what's the return at\", \"model the returns\", or \"back of the envelope\"."
+      },
+      {
+        "name": "unit-economics",
+        "desc": "Analyze unit economics for PE targets — ARR cohorts, LTV/CAC, net retention, payback periods, revenue quality, and margin waterfall. Essential for software/SaaS, recurring revenue, and subscription businesses. Use when evaluating revenue quality, building a cohort analysis, or assessing customer economics. Triggers on \"unit economics\", \"cohort analysis\", \"ARR analysis\", \"LTV CAC\", \"net retention\", \"revenue quality\", or \"customer economics\"."
+      },
+      {
+        "name": "value-creation-plan",
+        "desc": "Structure post-acquisition value creation plans with revenue, cost, and operational levers mapped to an EBITDA bridge. Includes 100-day priorities, KPI targets, and accountability frameworks. Use when planning post-close execution, preparing operating partner materials, or building a board-ready value creation roadmap. Triggers on \"value creation plan\", \"100-day plan\", \"post-close plan\", \"EBITDA bridge\", \"operating plan\", or \"value creation levers\"."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "sp-global",
+    "author": "Kensho Technologies",
+    "repo": "financial-services-plugins",
+    "category": "partner-built/spglobal",
+    "desc": "S&P Global - Financial data and analytics skills including company tearsheets, earnings previews, and transaction summaries",
+    "source": "anthropics/financial-services-plugins",
+    "installCmd": "claude plugin add anthropics/financial-services-plugins/partner-built/spglobal",
+    "skills": [
+      {
+        "name": "earnings-preview-beta",
+        "desc": "Generate a concise 4-5 page equity research earnings preview for a single company. Analyzes the most recent earnings transcript, competitor landscape, valuation, and recent news to produce a professional HTML report."
+      },
+      {
+        "name": "funding-digest",
+        "desc": "Generate a polished one-page PowerPoint slide summarizing key takeaways from recent funding rounds and notable capital markets activity across a user's watched sectors or companies. Use this skill when the user asks for a deal flow summary, weekly recap, funding digest, transaction roundup, or capital markets briefing. Triggers on: 'deal flow digest', 'weekly funding recap', 'deal roundup', 'transaction summary this week', 'what happened in [sector] this week', 'capital markets update', or any request to compile recent funding activity into a briefing slide. Produces a professional single-slide PPTX with key takeaways, valuation data, and Capital IQ deal links."
+      },
+      {
+        "name": "tear-sheet",
+        "desc": "Generate professional company tear sheets using S&P Capital IQ data via the Kensho LLM-ready API MCP server. Use this skill whenever the user asks for a tear sheet, company one-pager, company profile, fact sheet, company snapshot, or company overview document — especially when they mention a specific company name or ticker. Also trigger when users ask for equity research summaries, M&A company profiles, corporate development target profiles, sales/BD meeting prep documents, or any concise single-company financial summary. This skill supports four audience types: equity research, investment banking/M&A, corporate development, and sales/business development. If the user doesn't specify an audience, ask. Works for both public and private companies."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "wealth-management",
+    "author": "Anthropic FSI",
+    "repo": "financial-services-plugins",
+    "category": "wealth-management",
+    "desc": "Wealth management and financial advisory tools: client reviews, financial planning, portfolio analysis, and client reporting",
+    "source": "anthropics/financial-services-plugins",
+    "installCmd": "claude plugin add anthropics/financial-services-plugins/wealth-management",
+    "skills": [
+      {
+        "name": "client-report",
+        "desc": "Generate professional client-facing performance reports with portfolio returns, allocation breakdowns, and market commentary. Suitable for quarterly or annual distribution. Triggers on \"client report\", \"performance report\", \"quarterly report for [client]\", \"generate reports\", or \"client statement\"."
+      },
+      {
+        "name": "client-review",
+        "desc": "Prepare for client review meetings with portfolio performance summary, allocation analysis, talking points, and action items. Pulls together account data into a concise meeting-ready format. Use before quarterly reviews, annual checkups, or ad-hoc client meetings. Triggers on \"client review\", \"meeting prep for [client]\", \"quarterly review\", \"prep for [client name]\", or \"client meeting\"."
+      },
+      {
+        "name": "financial-plan",
+        "desc": "Build or update a comprehensive financial plan covering retirement projections, education funding, estate planning, and cash flow analysis. Use for new client onboarding, annual plan reviews, or scenario modeling. Triggers on \"financial plan\", \"retirement plan\", \"can I retire\", \"education funding\", \"estate plan\", \"cash flow analysis\", or \"plan update\"."
+      },
+      {
+        "name": "investment-proposal",
+        "desc": "Create professional investment proposals for prospective clients. Covers the firm's approach, proposed allocation, expected outcomes, and fee structure. Use when pitching new clients or presenting a new investment strategy. Triggers on \"investment proposal\", \"prospect presentation\", \"pitch new client\", \"proposal for [client]\", or \"new client presentation\"."
+      },
+      {
+        "name": "portfolio-rebalance",
+        "desc": "Analyze portfolio allocation drift and generate rebalancing trade recommendations across accounts. Considers tax implications, transaction costs, and wash sale rules. Triggers on \"rebalance\", \"portfolio drift\", \"allocation check\", \"rebalancing trades\", or \"my portfolio is out of balance\"."
+      },
+      {
+        "name": "tax-loss-harvesting",
+        "desc": "Identify tax-loss harvesting opportunities across taxable accounts. Finds positions with unrealized losses, suggests replacement securities, and tracks wash sale windows. Triggers on \"tax-loss harvesting\", \"TLH\", \"harvest losses\", \"tax losses\", \"unrealized losses\", or \"year-end tax planning\"."
+      }
+    ],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "agent-sdk-dev",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/agent-sdk-dev",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "artifacts-builder",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/artifacts-builder",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "audit-project",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/audit-project",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "backend-architect",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/backend-architect",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "bug-fix",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/bug-fix",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "canvas-design",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/canvas-design",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "changelog-generator",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/changelog-generator",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "code-review",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/code-review",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "commit",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/commit",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "connect-apps",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/connect-apps",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "create-pr",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/create-pr",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "debugger",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/debugger",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "developer-growth-analysis",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/developer-growth-analysis",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "documentation-generator",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/documentation-generator",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "frontend-design",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/frontend-design",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "frontend-developer",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/frontend-developer",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "mcp-builder",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/mcp-builder",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "perf",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/perf",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "pr-review",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/pr-review",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "security-guidance",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/security-guidance",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "senior-frontend",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/senior-frontend",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "ship",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/ship",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "skill-bus",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/skill-bus",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "test-writer-fixer",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/test-writer-fixer",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  },
+  {
+    "name": "theme-factory",
+    "author": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "category": "Integrations",
+    "desc": "",
+    "source": "ComposioHQ/awesome-claude-plugins",
+    "installCmd": "claude plugin add ComposioHQ/awesome-claude-plugins/theme-factory",
+    "skills": [],
+    "mcpServers": [],
+    "connectors": []
+  }
+]
