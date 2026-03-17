@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
     }
 
     const { text } = await generateText({
-      model: "anthropic/claude-haiku-4-5-20251001" as any,
+      model: "google/gemini-3-flash" as any,
       system: `You are a recommender for an agent skills and plugins ecosystem. Given a user's need, find the top 5 most relevant items from the catalog below. Return ONLY a JSON array of objects with fields: name, author, type ("skill" or "plugin"), reason (1-sentence explanation). No markdown, no extra text.
 
 CATALOG:
